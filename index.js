@@ -17,7 +17,7 @@ function rangeSlide(value) {
     pageViews.innerHTML = "50K PAGEVIEWS";
   } else if (sliderColor.value <= 25) {
     pageViews.innerHTML = "100K PAGEVIEWS";
-  } else if (sliderColor.value < 25) {
+  } else if (sliderColor.value > 25) {
     pageViews.innerHTML = "500K PAGEVIEWS";
   }
 }
