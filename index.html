@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pricing componenet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/pattern-circles.svg" class="pattern-circless" />
+      <h2>Simple, traffic-based pricing</h2>
+      <p class="header-text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+    <div class="card">
+      <div class="card-head">
+        <h4 id="views">100K PAGEVIEWS</h4>
+        <input
+          type="range"
+          min="0"
+          max="32"
+          value="16"
+          id="Range"
+          class="slider"
+          onchange="rangeSlide(this.value)"
+        />
+        <div class="pricemonth">
+          <p class="price"></p>
+          <p class="month">/ month</p>
+        </div>
+      </div>
+      <div class="billings">
+        <p class="billing">Monthly Billing</p>
+        <div class="sliding-button">
+          <div class="ball"></div>
+        </div>
+        <p class="billing">Yearly Billing</p>
+        <p class="percent one">-25%</p>
+        <p class="percent two">25% discount</p>
+      </div>
+      <hr />
+      <div class="bottom">
+        <div class="texts">
+          <div class="box">
+            <img src="./images/icon-check.svg" class="check" />
+            <p class="bottom-text">Unlimited websites</p>
+          </div>
+          <div class="box">
+            <img src="./images/icon-check.svg" class="check" />
+            <p class="bottom-text">100% data ownership</p>
+          </div>
+          <div class="box">
+            <img src="./images/icon-check.svg" class="check" />
+            <p class="bottom-text">Email reports</p>
+          </div>
+        </div>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </body>
+</html>
